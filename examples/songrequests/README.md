@@ -11,7 +11,7 @@ git clone git://github.com/teamrevlo/revlo_client.git
 * Retrieve your Revlo API Key by going to [Revlo](https://revlo.co) Dashboard > Settings > API Key
 * Find the reward\_id that belongs to your song request.
 ```
-curl -H "--x-api-key: $REVLO_API_KEY" https://api.revlo.co/1/rewards
+curl -H "x-api-key: $REVLO_API_KEY" https://api.revlo.co/1/rewards
 ```
 * Deploy [Nightbot](https://beta.nightbot.tv) on your channel.
 * Enable the `!songs` command on Nightbot
