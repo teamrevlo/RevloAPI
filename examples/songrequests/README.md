@@ -4,6 +4,10 @@ A sample project using Revlo's API to trigger Nightbot's !songs command.
 
 This sample project allows you to run a secondary bot/account in your chat, which will trigger the !songs command on Nightbot upon a Revlo reward redemption. This allows you to restrict the !songs command to moderators in your channel, but allow regular viewers to redeem it for points through a Revlo reward. 
 
+To run this program you need:
+- python3 installed on your machine
+- a Twitch account which will send !song commands to nightbot
+
 ## Install Instructions
 
 * Open your terminal or Powershell and clone the project
