@@ -34,7 +34,7 @@ port=6667
 
 ## Run instructions
 
-* In your Terminal/Powershell, enter this command
+* In your Terminal/Powershell, enter this command to start up the secondary bot 
 ```
 cd revlo_client/examples/songrequests
 python song_requests.py
