@@ -16,7 +16,7 @@ curl -H "x-api-key: $REVLO_API_KEY" https://api.revlo.co/1/rewards
 ```
 * Deploy [Nightbot](https://beta.nightbot.tv) on your channel.
 * Enable the `!songs` command on Nightbot & restrict it to moderators only. 
-* Retrieve your OAuth token. You can generate one with this [TwitchApp](https://twitchapps.com/).
+* Retrieve your OAuth token. You can generate one with this [Twitch Chat Oauth Generator](http://twitchapps.com/tmi/).
 * Make a copy of config.sample.ini in the same folder with the filename `config.ini`. Your config.ini file should look something like this:
 ```
 [revlo]
