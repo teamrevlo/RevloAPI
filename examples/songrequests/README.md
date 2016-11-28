@@ -39,3 +39,5 @@ port=6667
 cd revlo_client/examples/songrequests
 python song_requests.py
 ```
+
+Then try redeeming your song request reward on Revlo & see if the command is posted in chat. 
