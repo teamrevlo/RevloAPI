@@ -8,7 +8,7 @@ Welcome to the *Revlo API* Documentation.
 
 ## Libraries
 
-You can find our [Python client](http://github.com/teamrevlo/revlo-python-client) and [example](http://github.com/teamrevlo/revlo-python-client/examples) to help you get started!
+You can find our [Python client](http://github.com/teamrevlo/revlo-python-client) and [example](https://github.com/teamrevlo/revlo-python-client/tree/master/examples/) to help you get started!
 
 If you wrote your own client and would like to share it with the community, feel free to reach out via email: scott@revlo.co, or any Staff member on [Discord](https://discord.gg/0gGuQOPSxJCe5xjd).
 
