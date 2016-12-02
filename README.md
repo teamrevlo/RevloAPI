@@ -71,12 +71,16 @@ Reward redemptions on your broadcaster account.
 page:
   type: Integer
   default: 1
+completed:
+  type: Boolean (true or false)
+refunded:
+  type: Boolean (true or false)
 ```
 
 *Example Request*
 
 ```
-GET /1/redemptions?page=1 HTTP/1.1
+GET /1/redemptions?page=1&refunded=false HTTP/1.1
 x-api-key: MyApiToken
 Accept: application/json
 Host: api.revlo.co:443
@@ -96,3 +100,54 @@ Content-Length: 3385
 "https://www.youtube.com/watch?v=VN8GXJBJpr0"},"username":"youngster"},{"reward_id":2,"redemption_id":25,"created_at":"2016-11-17T21:24:17.069Z","refunded":false,"completed":false,"user_input":{"song":"https://www.youtube.com/watch?v=i25zLvU_xcs"},"username":"cooltrainer"},{"reward_id":2,"redemption_id":24,"created_at":"2016-11-17T21:24:15.802Z","refunded":false,"completed":false,"user_input":{"song":"https://www.youtube.com/watch?v=xMk8wuw7nek","username":"pokemaniac"},{"reward_id":2,"redemption_id":22,"created_at":"2016-11-17T21:24:12.621Z","refunded":false,"completed":false,"user_input":{"song":"https://www.youtube.com/watch?v=mRt0d1O4tiE"},"username":"bugcatcher"},..],"total":26,"page_size":25}
 ```
 
+### /redemptions/`redemption_id`
+
+**GET**
+
+Get a specific redemption record.
+
+*Example Request*
+```
+GET /1/redemptions/1337 HTTP/1.1
+x-api-key: MyApiToken
+Accept: application/json
+Host: api.revlo.co:443
+Connection: close
+```
+
+*Response*
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: close
+Content-Length: 215
+
+{"redemption":{"reward_id":2,"redemption_id":1337,"created_at":"2016-11-17T21:24:17.069Z","refunded":false,"completed":false,"user_input":{"song":"https://www.youtube.com/watch?v=mRt0d1O4tiE"},"username":"pokemaniac"}}
+```
+
+**PATCH**
+
+Update the redemption record. Modifiable fields include: completed.
+
+*Example Request*
+```
+PATCH /1/redemptions/1337 HTTP/1.1
+x-api-key: MyApiToken
+Accept: application/json
+Host: api.revlo.co:443
+Connection: close
+
+{"completed": true}
+```
+
+*Response*
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: close
+Content-Length: 215
+
+{"redemption":{"reward_id":2,"redemption_id":1337,"created_at":"2016-11-17T21:24:17.069Z","refunded":false,"completed":true,"user_input":{"song":"https://www.youtube.com/watch?v=mRt0d1O4tiE"},"username":"pokemaniac"}}
+```
