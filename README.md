@@ -4,7 +4,10 @@
 
 https://api.revlo.co/1/
 
-Welcome to the *Revlo API* Documentation.
+Welcome to the *Revlo API* Documentation. Here you can find everything needed to extend & build applications on top of Revlo's Rewards system. 
+
+## Terms of Service
+Usage of the Revlo API is bound by our [Terms of Service](https://www.revlo.co/p/legal/api-terms-of-service)
 
 ## Libraries
 
