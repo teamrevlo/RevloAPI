@@ -194,6 +194,13 @@ Content-Length: 492
 
 Bonus or subtract points to a fan. If subtracting more points than what a user currently has, the user's points is set to 0. Bonus points are restricted to +/- 1,000,000 points per call. 
 
+*Required Parameters*
+
+```
+amount:
+  type: Integer between -1000000 and 1000000
+```
+
 *Example Request*
 
 ```
