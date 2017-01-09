@@ -158,3 +158,62 @@ Content-Length: 215
 
 {"redemption":{"reward_id":2,"redemption_id":1337,"created_at":"2016-11-17T21:24:17.069Z","refunded":false,"completed":true,"user_input":{"song":"https://www.youtube.com/watch?v=mRt0d1O4tiE"},"username":"pokemaniac"}}
 ```
+
+### /fans/`username`/points
+
+**GET**
+
+Returns a loyalty object related to the broadcaster's account containing `current_points` earned through the broadcaster and `total_points` earned through the broadcaster.
+
+*Example Request*
+
+```
+GET /1/fans/pokemaniac HTTPS/1.1
+x-api-key: MyApiToken
+Accept: application/json
+Host: api.revlo.co:443
+Connection: close
+```
+
+*Response*
+
+```
+HTTPS/1.1 200 OK
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: close
+Content-Length: 492
+
+{"loyalty":{"fan":"pokemaniac","total_points":0,"current_points":0,"updated_at":"2016-09-14T16:02:00.000Z"}}
+```
+
+
+### /fans/`username`/points/bonus
+
+**POST**
+
+Bonus or subtract points to a fan. If subtracting more points than what a user currently has, the user's points is set to 0. Bonus points are restricted to +/- 1,000,000 points per call. 
+
+*Example Request*
+
+```
+POST /1/fans/pokemaniac HTTPS/1.1
+x-api-key: MyApiToken
+Accept: application/json
+Host: api.revlo.co:443
+Connection: close
+
+{'amount': 100}
+```
+
+*Response*
+
+```
+HTTPS/1.1 200 OK
+Content-Type: application/json
+X-Content-Type-Options: nosniff
+Connection: close
+Content-Length: 492
+
+{"loyalty":{"fan":"pokemaniac","total_points":0,"current_points":100,"updated_at":"2016-09-14T16:02:00.000Z"}}
+```
