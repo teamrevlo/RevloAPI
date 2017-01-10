@@ -210,7 +210,7 @@ Accept: application/json
 Host: api.revlo.co:443
 Connection: close
 
-{'amount': 100}
+{"amount": 100}
 ```
 
 *Response*
