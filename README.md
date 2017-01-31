@@ -18,6 +18,8 @@ If you wrote your own client and would like to share it with the community, feel
 Community contributions:
 
 * [NodeJS (Author: dbkynd)](https://www.npmjs.com/package/node-revlobot-api)
+* [Java (Author: Doc94)](https://github.com/Doc94/RevloAPI)
+* [C# (Author: hugobullont)](https://github.com/hugobullont/RevloClient)
 
 ## Protocols Supported
 
