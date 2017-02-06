@@ -106,7 +106,7 @@ Connection: close
 Content-Length: 3385
 
 {"redemptions":[{"reward_id":2,"redemption_id":26,"created_at":"2016-11-17T21:24:20.703Z","refunded":false,"completed":false,"user_input":{"song":
-"https://www.youtube.com/watch?v=VN8GXJBJpr0"},"username":"youngster"},{"reward_id":2,"redemption_id":25,"created_at":"2016-11-17T21:24:17.069Z","refunded":false,"completed":false,"user_input":{"song":"https://www.youtube.com/watch?v=i25zLvU_xcs"},"username":"cooltrainer"},{"reward_id":2,"redemption_id":24,"created_at":"2016-11-17T21:24:15.802Z","refunded":false,"completed":false,"user_input":{"song":"https://www.youtube.com/watch?v=xMk8wuw7nek","username":"pokemaniac"},{"reward_id":2,"redemption_id":22,"created_at":"2016-11-17T21:24:12.621Z","refunded":false,"completed":false,"user_input":{"song":"https://www.youtube.com/watch?v=mRt0d1O4tiE"},"username":"bugcatcher"},..],"total":26,"page_size":25}
+"https://www.youtube.com/watch?v=VN8GXJBJpr0"},"username":"youngster"},{"reward_id":2,"redemption_id":25,"created_at":"2016-11-17T21:24:17.069Z","refunded":false,"completed":false,"user_input":{"song":"https://www.youtube.com/watch?v=i25zLvU_xcs"},"username":"cooltrainer"},{"reward_id":2,"redemption_id":24,"created_at":"2016-11-17T21:24:15.802Z","refunded":false,"completed":false,"user_input":{"song":"https://www.youtube.com/watch?v=xMk8wuw7nek"},"username":"pokemaniac"},{"reward_id":2,"redemption_id":22,"created_at":"2016-11-17T21:24:12.621Z","refunded":false,"completed":false,"user_input":{"song":"https://www.youtube.com/watch?v=mRt0d1O4tiE"},"username":"bugcatcher"},..],"total":26,"page_size":25}
 ```
 
 ### /redemptions/`redemption_id`
