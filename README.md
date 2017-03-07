@@ -30,6 +30,9 @@ Community contributions:
 
 * application/json
 
+## Rate Limits
+
+* There is a cap at 1000 requests per hour per API key.
 
 ## Endpoints
 
