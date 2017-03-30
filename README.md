@@ -88,6 +88,8 @@ completed:
   type: Boolean (true or false)
 refunded:
   type: Boolean (true or false)
+reward_id:
+  type: Integer
 ```
 
 *Example Request*
