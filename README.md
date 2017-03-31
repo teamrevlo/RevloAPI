@@ -32,7 +32,7 @@ Community contributions:
 
 ## Rate Limits
 
-* There is a cap at 1000 requests per hour per API key.
+* There is a cap at 5000 requests per hour per API key.
 
 ## Endpoints
 
